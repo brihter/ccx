@@ -6,7 +6,7 @@ claude code xtras, a collection of custom skills for claude code.
 
 | skill | description |
 |-------|-------------|
-| `/ccx-auto-optimize` | auto-optimize code by iteratively benchmarking one change at a time, keeping only verified improvements |
+| `/ccx-auto-optimize` | iteratively benchmark and optimize code, keeping only verified improvements |
 
 ## installation
 
