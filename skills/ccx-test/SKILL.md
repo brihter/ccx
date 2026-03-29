@@ -24,9 +24,7 @@ Optimize for these properties, weigh tradeoffs carefully:
 
 ## Practical Heuristics
 
-These aren't rules, they're defaults that produce good tests.
-
-Override them when the situation calls for it:
+These aren't rules, they're defaults that produce good tests. Override them when the situation calls for it.
 
 * Test behavior at boundaries and error paths, not just the happy path. The interesting bugs live at edges: empty inputs, off-by-ones, invalid states, permission failures.
 * One logical assertion per test. A test that checks five things fails for five reasons. When it breaks, you want to know which one.
@@ -35,15 +33,15 @@ Override them when the situation calls for it:
 
 ## Workflow
 
-### Existing code
+## Existing code
 
 This is the common case. The code already works (or is believed to), the goal is to lock in behavior.
 
-1. Read the code and identify the distinct behaviors worth testing.
-2. Write tests one at a time, running each immediately to confirm it passes.
-3. If a test unexpectedly fails, investigate - it may reveal a real bug or a misunderstanding of the behavior.
+* Read the code and identify the distinct behaviors worth testing.
+* Write tests one at a time, running each immediately to confirm it passes.
+* If a test unexpectedly fails, investigate - it may reveal a real bug or a misunderstanding of the behavior.
 
-### New code
+## New code
 
 Test-first (red-green-refactor) when writing new code or when the user explicitly asks for TDD.
 
@@ -53,3 +51,7 @@ Test-first (red-green-refactor) when writing new code or when the user explicitl
 4. Implement the minimal code needed to pass.
 5. Verify it passes.
 6. Repeat.
+
+## Notes
+
+* if no test command is apparent, ask the user before proceeding
