@@ -6,7 +6,7 @@ claude code xtras, a collection of custom skills for claude code.
 
 | skill | description |
 |-------|-------------|
-| `/ccx-auto-optimize` | auto optimize code inspired by karpathy/[autoresearch](https://github.com/karpathy/autoresearch) |
+| `/ccx-auto-optimize` | auto optimize code inspired by [karpathy/autoresearch](https://github.com/karpathy/autoresearch) |
 | `/ccx-test` | write tests following kent beck's [test desiderata](https://testdesiderata.com/) |
 
 ## installation
