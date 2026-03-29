@@ -7,6 +7,7 @@ claude code xtras, a collection of custom skills for claude code.
 | skill | description |
 |-------|-------------|
 | `/ccx-auto-optimize` | iteratively benchmark and optimize code, keeping only verified improvements |
+| `/ccx-test` | write tests following kent beck's [test desiderata](https://testdesiderata.com/) |
 
 ## installation
 
