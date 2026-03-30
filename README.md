@@ -4,10 +4,10 @@ claude code xtras, a collection of custom skills for claude code.
 
 ## skills
 
-| skill | description |
-|-------|-------------|
-| `/ccx-auto-optimize` | auto optimize code inspired by [karpathy/autoresearch](https://github.com/karpathy/autoresearch) |
-| `/ccx-test` | write tests following kent beck's [test desiderata](https://testdesiderata.com/) |
+| command | file | description |
+|---------|------|-------------|
+| `/ccx-auto-optimize` | [SKILL.md](skills/ccx-auto-optimize/SKILL.md) | auto optimize code inspired by [karpathy/autoresearch](https://github.com/karpathy/autoresearch) |
+| `/ccx-test` | [SKILL.md](skills/ccx-test/SKILL.md) | write tests following kent beck's [test desiderata](https://testdesiderata.com/) |
 
 ## installation
 
