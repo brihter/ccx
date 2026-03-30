@@ -6,11 +6,14 @@ skills_src="$script_dir/skills"
 skills_trg="$HOME/.claude/skills"
 
 mkdir -p "$skills_trg"
+skills_trg="$(cd "$skills_trg" && pwd)"
 
 for skill_dir in "$skills_src"/*/; do
   skill_name="$(basename "$skill_dir")"
-  echo "[*] installing $skill_name ..."
-  cp -r "$skill_dir" "$skills_trg/$skill_name"
+  dest="$skills_trg/$skill_name"
+  mkdir -p "$dest"
+  cp -rT "$skill_dir" "$dest"
+  echo "[+] installed $skill_name"
 done
 
-echo "[*] done"
+echo "[+] done"
