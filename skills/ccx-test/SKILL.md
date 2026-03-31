@@ -26,7 +26,7 @@ Optimize for these properties, weigh tradeoffs carefully:
 
 * These aren't rules set in stone, they're defaults that produce good tests. Override them when the situation calls for it.
 * Test behavior at boundaries and error paths, not just the happy path. The interesting bugs live at edges: empty inputs, off-by-ones, invalid states, permission failures.
-* One logical assertion per test — meaning one reason to fail, not necessarily one assert statement.
+* One logical assertion per test, meaning one reason to fail, not necessarily one assert statement.
 * Name tests to describe the expected behavior, not the implementation. `rejects_expired_token` tells you what broke, `test_validate_3` does not.
 * Prefer testing through the public interface. Reaching into private methods couples tests to structure, violating structure-insensitive.
 * Mock at boundaries (network, disk, databases), not internals. Prefer dependency injection over monkey-patching when the language supports it.
@@ -48,7 +48,7 @@ This is the common case. The code already works (or is believed to), the goal is
 * If a test file already exists for the code under test, extend it rather than creating a new one.
 * Read the code and identify the distinct behaviors worth testing.
 * Write tests one at a time, running each immediately to confirm it passes.
-* If a test unexpectedly fails, investigate — it may reveal a real bug or a misunderstanding of the behavior.
+* If a test unexpectedly fails, investigate, it may reveal a real bug or a misunderstanding of the behavior.
 
 ### New code
 
