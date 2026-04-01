@@ -38,13 +38,3 @@ Before writing any benchmarks:
 4. Determine the baseline or comparison the benchmark needs to support.
 
 Write one benchmark at a time and run it immediately to confirm it works. If results are too noisy to compare, improve the benchmark or report the uncertainty.
-
-### Optimization work
-
-When the benchmark is meant to validate a speedup:
-
-1. Benchmark the current implementation.
-2. Record the baseline metrics.
-3. Make one change.
-4. Rerun the same benchmark.
-5. Keep only changes that improve performance without breaking correctness.
