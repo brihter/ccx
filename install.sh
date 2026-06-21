@@ -8,6 +8,12 @@ skills_trg="$HOME/.claude/skills"
 mkdir -p "$skills_trg"
 skills_trg="$(cd "$skills_trg" && pwd)"
 
+old_skill="$skills_trg/ccx-auto-optimize"
+if [[ -d "$old_skill" || -L "$old_skill" ]]; then
+  rm -rf -- "$old_skill"
+  echo "[+] removed renamed ccx-auto-optimize"
+fi
+
 for skill_dir in "$skills_src"/*/; do
   skill_name="$(basename "$skill_dir")"
   dest="$skills_trg/$skill_name"

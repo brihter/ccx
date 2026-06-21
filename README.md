@@ -6,7 +6,7 @@ claude code xtras, a collection of custom skills for claude code.
 
 | command | file | description |
 |---------|------|-------------|
-| `/ccx-auto-optimize` | [SKILL.md](skills/ccx-auto-optimize/SKILL.md) | auto optimize code inspired by [karpathy/autoresearch](https://github.com/karpathy/autoresearch) |
+| `/ccx-optimize` | [SKILL.md](skills/ccx-optimize/SKILL.md) | optimize code inspired by [karpathy/autoresearch](https://github.com/karpathy/autoresearch) |
 | `/ccx-benchmark` | [SKILL.md](skills/ccx-benchmark/SKILL.md) | measure and compare performance with reproducible benchmarks |
 | `/ccx-simplify` | [SKILL.md](skills/ccx-simplify/SKILL.md) | simplify code while preserving exact behavior |
 | `/ccx-test` | [SKILL.md](skills/ccx-test/SKILL.md) | write tests following kent beck's [test desiderata](https://testdesiderata.com/) |

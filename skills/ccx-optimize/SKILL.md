@@ -1,6 +1,6 @@
 ---
-name: ccx-auto-optimize
-description: Auto-optimize code by iteratively benchmarking one change at a time, keeping only verified improvements. Use this skill whenever the user asks to optimize, speed up or improve the performance of code or making something faster even if they don't specify a methodology.
+name: ccx-optimize
+description: Optimize code by iteratively benchmarking one change at a time, keeping only verified improvements. Use this skill whenever the user asks to optimize, speed up or improve the performance of code or making something faster even if they don't specify a methodology.
 ---
 
 Optimize the implementation for performance. Work one file at a time. Isolate every benchmark run: change one idea, test it, then keep only verified improvements.
