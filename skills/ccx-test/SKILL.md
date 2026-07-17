@@ -24,12 +24,12 @@ Optimize for these properties, weigh tradeoffs carefully:
 
 ## Notes
 
-* These aren't rules set in stone, they're defaults that produce good tests. Override them when the situation calls for it.
 * Test behavior at boundaries and error paths, not just the happy path. The interesting bugs live at edges: empty inputs, off-by-ones, invalid states, permission failures.
 * One logical assertion per test, meaning one reason to fail, not necessarily one assert statement.
 * Name tests to describe the expected behavior, not the implementation. `rejects_expired_token` tells you what broke, `test_validate_3` does not.
 * Prefer testing through the public interface. Reaching into private methods couples tests to structure, violating structure-insensitive.
-* Mock at boundaries (network, disk, databases), not internals. Prefer dependency injection over monkey-patching when the language supports it.
+* Keep dependencies explicit and pass test substitutes through dependency injection. Never monkey-patch globals, modules, or runtime state, even when the language or test framework supports it.
+* Avoid mocks and fakes, prefer real collaborators. Assert an independently known outcome rather than comparing a value with itself or deriving the expected result by repeating the production logic.
 * Mark each public function/method under test with a section comment or describe block, even if the file only tests one. Use whatever delimiter is idiomatic for the framework.
 * Keep the test bodies terse, tight and compact (no internal blank lines in the test body), but don't obfuscate (no code golfing).
 
