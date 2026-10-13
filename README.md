@@ -20,7 +20,15 @@ cd ccx
 ./install.sh
 ```
 
-this copies all skills into `~/.claude/skills/`, where claude code automatically discovers them. note that running the install again will overwrite any existing skills with the same name.
+this copies all skills into `~/.claude/skills/` (automatically discovered by claude code) and `~/.agents/skills/`. note that running the install again will overwrite any existing skills with the same name in both locations.
+
+## uninstallation
+
+```bash
+./uninstall.sh
+```
+
+this removes this repository's skills and the legacy `ccx-auto-optimize` skill from both `~/.claude/skills/` and `~/.agents/skills/`, leaving unrelated skills untouched. missing skills are ignored.
 
 ## credits
 
